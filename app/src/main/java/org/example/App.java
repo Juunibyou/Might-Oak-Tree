@@ -19,7 +19,18 @@ public class App {
         Node retrievedRight = nodeOne.right();
 
         System.out.println("Left child: " + retrievedLeft.get_detail().getName());
-        System.out.println("Left child: " + retrievedRight.get_detail().getName());
+        System.out.println("Right child: " + retrievedRight.get_detail().getName());
 
+        System.out.println("\nTraversal: ");
+        traverse(nodeOne);
+
+    }
+
+    public static void traverse(Node node) {
+        if (node != null) {
+          System.out.println("Squirrels: " + node.get_detail().getName());
+          traverse(node.left());
+          traverse(node.right());
+        }
     }
 }
