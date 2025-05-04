@@ -25,4 +25,6 @@ class AppTest {
     assertEquals("Jane", test.left().get_detail().getName());
     assertEquals("Joe", test.right().get_detail().getName());
     }
+
+
 }
